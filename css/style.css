@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+    }
+
+    /* Navigation links */
+    /* Style the navigation menu */
+    .navbar {
+        width: 100%;
+        background-color: whitesmoke;
+        overflow: auto;
+    }
+
+    /* Navigation links */
+    .navbar a {
+        float: left;
+        padding: 12px 12px 12px;
+        color: purple;
+        text-decoration: none;
+        font-size: 17px;
+        width: 25%%;
+        /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+        text-align: center;
+        /* If you want the text to be centered */
+    }
+
+    /* Add a background color on mouse-over */
+    .navbar a:hover {
+        background-color: lightyellow;
+    }
+
+    /* Style the current/active link */
+    .navbar a:active {
+        background-color: salmon;
+    }
+
+    #bannerimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .hspace {
+        padding-left: 10px;
+    }
+
+    .hspacetall {
+        padding: 10px 0px 10px;
+    }
+
+    .wut {
+        padding: 10px 40px 0px 20px;
+    }
+
+    .projimg {
+        margin: 25px 40px 25px 25px;
+        border: 2px solid black;
+        height: 250px;
+    }
+
+    .divbox{
+        margin: 20px 20px 20px 20px;
+        padding: 10px 10px 10px 10px;
+        background-color: whitesmoke;
+        width: 33.3%;
+        border: solid 7px purple;
+        border-radius: 20px;
+        text-align: center;
+    }
