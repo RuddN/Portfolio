@@ -75,20 +75,25 @@
     .dogbox{
         margin: auto;
         padding: 20px 50px 20px 50px;
-        background-color: whitesmoke;
         width: 33.3%;
         border: solid 7px purple;
+        background-color: whitesmoke;
         border-radius: 20px;
         text-align: center;
     }
 
     #gallery {
-        
+        background-color: #e6d5eb;
     }
 
     #gallery img {
         width: 360px;
         height: 230px;
-        border: solid 20px white;
+        padding: 20px;
         border-radius: 10px;
+    }
+
+    .credits{
+        text-align: center;
+        background-color: whitesmoke;
     }
