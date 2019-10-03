@@ -63,13 +63,14 @@
     }
 
     .divbox{
-        margin: 20px 20px 20px 20px;
-        padding: 10px 10px 10px 10px;
+        margin: 10px 20px 10px 20px;
+        padding: 20px 10px 20px 10px;
         background-color: whitesmoke;
-        width: 33.3%;
+        width: 50%;
         border: solid 7px purple;
         border-radius: 20px;
         text-align: center;
+        text-size-adjust: 14;
     }
 
     .dogbox{
@@ -96,4 +97,13 @@
     .credits{
         text-align: center;
         background-color: whitesmoke;
+    }
+
+    .profile{
+        margin: 20px 100px 20px 20px;
+        padding: 20px 20px 20px 20px;
+        border: solid 7px purple;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        text-align: center;
     }
