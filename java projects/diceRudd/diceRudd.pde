@@ -91,6 +91,13 @@ void mousePressed()
     cRollVal=0;
     cRollNum=0;
   }
+  if(numRollLeft==0){
+    totalRoll=0;
+    numRoll=0;
+    numRollLeft=25;
+    cRollVal=0;
+    cRollNum=0;
+  }
   for(int i=0; i<dice.length; i++){
     for(int j=0; j<dice.length; j++){
       dice[i][j].roll();
