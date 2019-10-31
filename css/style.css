@@ -107,3 +107,8 @@
         border-radius: 20px;
         text-align: center;
     }
+
+    #content {
+        margin: 20px;
+        align-content: center;
+    }
