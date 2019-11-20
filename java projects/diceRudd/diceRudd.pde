@@ -4,6 +4,7 @@ int equation4sizeXorY = jPlus1ORiPlus1*(diesize+10)+30;
 Die[][] dice = new Die[5][5];
 int totalvalue;
 int totalRoll, numRoll, numRollLeft, cRollVal, cRollNum; 
+int wins, losses;
 double avgRoll;
 PImage party, youwin, youlose, sadface;
 
@@ -18,6 +19,8 @@ void setup()
   numRollLeft=24;
   cRollVal=0;
   cRollNum=1;
+  wins=0;
+  losses=0;
   party = loadImage("celebratesmol.png");
   youwin = loadImage("youwin.png");
   youlose = loadImage("you lose stamp.png");
@@ -53,7 +56,11 @@ void draw()
   rect(0, 0, 330, 80);
   textSize(25);
   fill(255,255,255);
-  text("Roll a total of 100 before \n    you run out of rolls!", 15, 28);
+  text("Roll a total of 100 before", 15, 25);
+  text("you run out of rolls!", 40, 50);
+  textSize(18);
+  text("Wins: " + wins + "  Losses: " + losses, 85, 72);
+  textSize(25);
   text("Total: " + totalvalue, 105, 400);
   textSize(18);
   text("Number of Rolls Left: " + numRollLeft, 25, 430);
@@ -67,6 +74,7 @@ void draw()
     fill(212,17,17);
     textSize(24);
     text("Click to play again. :)", 45, 470);
+    losses+=1;
   }
   if(totalvalue==100){
     fill(51, 56, 84);
@@ -80,6 +88,7 @@ void draw()
     textSize(18);
     fill(163, 237, 255);
     text("Click to play again. :)", 75, 470);
+    wins+=1;
   }
 }
 void mousePressed()
