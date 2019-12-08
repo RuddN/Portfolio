@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
-		<title>Lightning</title>
+		<title>Dice</title>
     	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 		<script src="processing.js"></script>
 	</head>
 	<body bgcolor="#e6d5eb">
 		<div class="navbar a">
-					<h1><img id="bannerimg" src="../../images/PortfolioBannerLg.png" alt="Banner"></h1>
+					<h1><img id="bannerimg" src="../../images/PortfolioBanner.png" alt="Banner"></h1>
 					<a href="../../index.html">Home</a>
 					<a href="../../pages/projects.html">Projects</a>
 					<a href="../../pages/dogblog.html">Dog Blog</a>
 					<a href="../../pages/aboutme.html">About Me</a>
 		</div>
 		<header>
-			<h1 align="center" class="hspacetall">Lightning Lab</h1>
+			<h1 align="center" class="hspacetall">Dice Lab</h1>
 		</header>
-		<canvas id="content" data-processing-sources="lightningJS.js">
-		</canvas>
-		<div class="projbox"><h4 class="hspacetall">Project Struggles:</h4>
+		<canvas align="right" id="content" data-processing-sources="diceRudd.pde"></canvas>
+		<div align="right" class="projbox"><h4 class="hspacetall">Project Struggles:</h4>
 			<p>For me, the hardest part of the lightning project was developing the parameters for the lightning bolt's variance. It ended up just taking a lot of trial and error to find the ones that created a realistic looking bolt.</p>
 		</div>
-		<div class="projbox"><h4 class="hspacetall">Favorite Section of Code:</h4>
+		<div align="right" class="projbox"><h4 class="hspacetall">Favorite Section of Code:</h4>
 			<p>int startX=((int)(Math.random()*800));
 				<br>int startY=0;
 				<br>int endX=((int)(Math.random()*800));

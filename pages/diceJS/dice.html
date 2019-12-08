@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dice</title>
+    	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+		<script src="processing.js"></script>
+	</head>
+	<body bgcolor="#e6d5eb">
+		<div class="navbar a">
+					<h1><img id="bannerimg" src="../../images/PortfolioBannerLg.png" alt="Banner"></h1>
+					<a href="../../index.html">Home</a>
+					<a href="../../pages/projects.html">Projects</a>
+					<a href="../../pages/dogblog.html">Dog Blog</a>
+					<a href="../../pages/aboutme.html">About Me</a>
+		</div>
+		<header>
+			<h1 align="center" class="hspacetall">Dice Lab</h1>
+		</header>
+		<canvas id="content" data-processing-sources="lightningJS.js">
+		</canvas>
+		<div class="projbox"><h4 class="hspacetall">Project Struggles:</h4>
+			<p>For me, the hardest part of the dice lab was figuring out how to align all the dots correctly within the dice without having to code each dot individually for each dice based on its value. I discovered that I could utilize previously coded values and overlap them to save myself a lot of time. See the code below. :)</p>
+		</div>
+		<div class="projbox"><h4 class="hspacetall">Favorite Section of Code:</h4>
+			<p>void one(){
+				<br>fill(0,0,0);
+				<br>ellipse(midx, midy, 7, 7);
+			<br>}
+			<br>
+			<br>void two(){
+				<br>fill(0,0,0);
+				<br>ellipse(topx, topy, 7, 7);
+				<br>ellipse(botx, boty, 7, 7);
+			<br>}
+			<br>
+			<br>void three(){
+				<br>fill(0,0,0);
+				<br>one();
+				<br>two();
+			<br>}
+			<br>
+			<br>void four(){
+				<br>fill(0,0,0);
+				<br>two();
+				<br>ellipse(botx, topy, 7, 7);
+				<br>ellipse(topx, boty, 7, 7);
+			<br>}
+			<br>
+			<br>void five(){
+				<br>fill(0,0,0);
+				<br>one();
+				<br>four();
+			<br>}
+			<br>
+			<br>void six(){
+				<br>fill(0,0,0);
+				<br>four();
+				<br>ellipse(topx, midy, 7, 7);
+				<br>ellipse(botx, midy, 7, 7);
+			<br>}</p>
+		</div>
+		<footer>
+
+		</footer>
+	</body>
+</html>

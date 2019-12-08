@@ -4,10 +4,10 @@ var endX=random(800);
 var endY=0;
 var grass, hamster;
 
-Raindrop[] rain=new Raindrop[15];
+var rain=new Raindrop[15];
 
-Flash[] flashes=new Flash[10];
-Hamster hammy=new Hamster();
+var flashes=new Flash[10];
+var hammy=new Hamster();
 
 function setup()
 {

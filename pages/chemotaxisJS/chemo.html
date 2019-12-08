@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Chemotaxis</title>
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="processing.js"></script>
+</head>
+
+<body bgcolor="#e6d5eb">
+	<div class="navbar a">
+		<h1><img id="bannerimg" src="../../images/PortfolioBannerLg.png" alt="Banner"></h1>
+		<a href="../../index.html">Home</a>
+		<a href="../../pages/projects.html">Projects</a>
+		<a href="../../pages/dogblog.html">Dog Blog</a>
+		<a href="../../pages/aboutme.html">About Me</a>
+	</div>
+	<header>
+		<h1 align="center" class="hspacetall">Chemotaxis Lab</h1>
+	</header>
+	<canvas id="content" data-processing-sources="lightningJS.js">
+	</canvas>
+	<div class="projbox">
+		<h4 class="hspacetall">Project Struggles:</h4>
+		<p>For me, the hardest part of the Chemotaxis Lab was figuring out how to move the mice without them speeding off into the distance. I initially used ints as my variable for x, y, speedx, and speedy, which didn't allow for incremental enough changes. Using floats helped fix that problem.</p>
+	</div>
+	<div class="projbox">
+		<h4 class="hspacetall">Favorite Section of Code:</h4>
+		<p>public void move() {
+		<br>speedx=(float)(Math.random()*9000/900000);
+		<br>speedy=(float)(Math.random()*9000/900000);
+		<br>if(x<=0&&x>=700)
+		<br>speedx=0;
+		<br>if(y<=0&&y>=432)
+		<br>speedy=0;
+		<br>if (good) {
+		<br>float xDist = hand.x - x;
+		<br>x+=(xDist*speedx);
+		<br>float yDist = hand.y - y;
+		<br>y+=(yDist*speedy);
+		<br>speedx=(float)(Math.random()/100);
+		<br>speedy=(float)(Math.random()/100);
+		<br>} else {
+		<br>float xDist = hand.x - x;
+		<br>x-=xDist*speedx;
+		<br>float yDist = hand.y - y;
+		<br>y-=yDist*speedy;
+		<br>speedx=(float)(Math.random()/100);
+		<br>speedy=(float)(Math.random()/100);
+		<br>}
+		<br>}</p>
+	</div>
+	<footer>
+
+	</footer>
+</body>
+
+</html>

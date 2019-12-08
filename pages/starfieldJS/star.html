@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Starfield</title>
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="processing.js"></script>
+</head>
+
+<body bgcolor="#e6d5eb">
+	<div class="navbar a">
+		<h1><img id="bannerimg" src="../../images/PortfolioBannerLg.png" alt="Banner"></h1>
+		<a href="../../index.html">Home</a>
+		<a href="../../pages/projects.html">Projects</a>
+		<a href="../../pages/dogblog.html">Dog Blog</a>
+		<a href="../../pages/aboutme.html">About Me</a>
+	</div>
+	<header>
+		<h1 align="center" class="hspacetall">Starfield Lab</h1>
+	</header>
+	<canvas id="content" data-processing-sources="lightningJS.js">
+	</canvas>
+	<div class="projbox">
+		<h4 class="hspacetall">Project Struggles:</h4>
+		<p>For me, the hardest part of the starfield lab was figuring out how to calculate the path of the particles. By using the formula (cos(angle)*speed) for the x position's movement and (sin(angle)*speed) for the y position's movement, I was able to get the particles to move in the correct manner.</p>
+	</div>
+	<div class="projbox">
+		<h4 class="hspacetall">Favorite Section of Code:</h4>
+		<p>void mousePressed() {
+		<br>spawnX=mouseX-(width/2);
+		<br>spawnY=mouseY-(height/2);
+		<br>for (int i = 0; i<pieces.length; i++) {
+		<br>pieces[i].show(spawnX,spawnY);
+		<br>pieces[i].move();
+		<br>}
+		<br>for (int i = 0; i<shinies.length; i++) {
+		<br>shinies[i].show(spawnX, spawnY);
+		<br>shinies[i].move();
+		<br>}
+		<br>}</p>
+	</div>
+	<footer>
+
+	</footer>
+</body>
+
+</html>
